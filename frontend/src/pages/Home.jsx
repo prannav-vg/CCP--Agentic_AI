@@ -4,28 +4,10 @@ import logo from "../assets/logo.png";
 import logo1 from "../assets/logo1.png";
 
 const coreFeatures = [
-  "User Behavior Anomaly Detection (UBA)",
   "Phishing Email & SMS Detection",
-  "Malicious URL & QR Code Scanner",
-  "File Behavior Analysis (Ransomware/Malware)",
-  "Real-Time Access Trust Engine",
   "Security Admin Dashboard",
   "Alerts & Notification System",
 ];
-
-const advancedFeatures = [
-  "File Edit Tracking",
-  "LLM-based Threat Assistant",
-  "AI-Powered Deceptive Honeypots",
-  "Federated Learning for Threat Sharing",
-  "Blockchain Audit Trail Logging",
-  "Dark Web Monitoring & Threat Enrichment",
-  "USB/Offline Hardware Access Detection",
-  "Cyber Hygiene Scoring System",
-  "Personalized Career Path Navigator Agent",
-  "Auto-Mitigating Smart Response Playbooks",
-];
-
 const FeatureCard = ({ title, type, index }) => (
   <motion.div
     initial={{ opacity: 0, y: 30 }}
@@ -86,16 +68,6 @@ const HomePage = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {coreFeatures.map((feature, idx) => (
             <FeatureCard key={idx} title={feature} type="core" index={idx} />
-          ))}
-        </div>
-      </div>
-
-      {/* Advanced Features */}
-      <div className="mt-12 w-full max-w-6xl">
-        <h2 className="text-2xl font-semibold mb-4 text-orange-400">🚀 Advanced Features</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {advancedFeatures.map((feature, idx) => (
-            <FeatureCard key={idx} title={feature} type="advanced" index={idx} />
           ))}
         </div>
       </div>
