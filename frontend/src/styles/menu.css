@@ -1,0 +1,100 @@
+/* Sidebar container */
+
+.sidebar {
+    @apply w-64 min-h-screen bg-gray-900 text-white shadow-xl flex flex-col transition-all duration-300 ease-in-out;
+}
+
+
+/* Sidebar header/logo area */
+
+.sidebar-header {
+    @apply text-xl font-bold p-6 border-b border-gray-700;
+}
+
+
+/* Sidebar menu item */
+
+.menu-item {
+    @apply flex items-center justify-between px-5 py-3 text-sm font-medium hover: bg-gray-800 hover: text-cyan-400 transition-all duration-200 ease-in-out cursor-pointer rounded-lg mx-3 my-1;
+}
+
+
+/* Active state */
+
+.menu-item-active {
+    @apply bg-cyan-600 text-white;
+}
+
+
+/* Menu icon with text */
+
+.menu-icon {
+    @apply flex items-center space-x-3;
+}
+
+
+/* Toggle section title */
+
+.section-title {
+    @apply text-xs text-gray-400 uppercase tracking-wider px-5 pt-4 pb-1;
+}
+
+
+/* Button */
+
+.button {
+    @apply px-4 py-2 text-sm font-semibold text-white bg-cyan-600 rounded-lg hover: bg-cyan-700 transition-all duration-200 ease-in-out;
+}
+
+
+/* Secondary button (ghost style) */
+
+.button-secondary {
+    @apply px-4 py-2 text-sm font-semibold text-cyan-600 border border-cyan-600 rounded-lg hover: bg-cyan-50 transition-all duration-200 ease-in-out;
+}
+
+
+/* Toggle switch wrapper */
+
+.toggle-wrapper {
+    @apply relative inline-flex items-center w-12 h-6 cursor-pointer rounded-full bg-gray-300 transition-all duration-300 ease-in-out;
+}
+
+
+/* Toggle switch circle */
+
+.toggle-circle {
+    @apply absolute left-1 top-1 w-4 h-4 bg-white rounded-full shadow-md transform transition-all duration-300 ease-in-out;
+}
+
+
+/* When toggle is ON (using class or JS toggle) */
+
+.toggle-on {
+    @apply bg-cyan-600;
+}
+
+.toggle-on .toggle-circle {
+    @apply translate-x-6;
+}
+
+
+/* Divider between sections */
+
+.menu-divider {
+    @apply border-t border-gray-700 my-2 mx-5;
+}
+
+
+/* Logout or critical action */
+
+.menu-danger {
+    @apply flex items-center px-5 py-3 text-sm text-red-500 hover: bg-red-100 hover: text-red-700 rounded-lg transition duration-200 ease-in-out;
+}
+
+
+/* Scrollbar for sidebar (if scroll needed) */
+
+.sidebar-scroll {
+    @apply overflow-y-auto scrollbar-thin scrollbar-thumb-gray-700 scrollbar-track-gray-900;
+}
